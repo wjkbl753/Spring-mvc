@@ -1,5 +1,3 @@
-# 起步
-
 ## 准备数据库
 
 新建数据库 `mybatis`
@@ -60,7 +58,7 @@ INSERT INTO `user` VALUES ('1', '小明', '1', 'xiaoming@163.com');
   </mappers>
 </configuration>
 ```
-!>mybatis新版本支持面向接口编程，程序员不需要再写接口的实现类，转而用配置文件代替：
+!>mybatis新版本支持`面向接口编程`，程序员`不需要`再写接口的实现类，转而用配置文件代替：
 
 ---
 
@@ -77,7 +75,7 @@ public class User{
 }
 ```
 
-!> 上面实体类中userName对应数据表中的user_name字段
+!> 上面实体类中`userName`对应数据表中的`user_name`字段
 
 *UserMapper.java*
 
@@ -89,7 +87,7 @@ public interface UserMapper {
 
 ## 创建UserMapper的映射文件 UserMapper.xml：
 
-*UserMapper.xml*  (此文件需要和dao文件同名，并且放在同一目录下)
+*UserMapper.xml*  (`此文件需要和dao文件同名，并且放在同一目录下`)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
