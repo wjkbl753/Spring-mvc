@@ -1,0 +1,53 @@
+## 注解位置
+- `类上`
+- `方法上`
+
+?>请求的地址将会是   /项目名/类上注解/方法上注解
+
+```java
+@RequestMapping("/spring")
+@Controller
+public class HelloWorld {
+	
+	/**
+	 * 1. 使用@RequestMapping注解映射请求的url
+	 * 2. 返回值会通过视图解析器解析为实际的物理视图 
+	 * prefix+ return值 + suffix 得到实际的物理视图，然后转发
+	 * @return
+	 */
+	@RequestMapping("/hello")
+	public String hello(){
+		System.out.println("hello");
+		return "success";
+	}
+}
+```
+
+## 拥有属性：
+   - `value`
+   - `metho`
+   - `param`
+   - `heads`
+
+## 方法限制(method)
+  如：
+  
+@RequestMapping(value="/hello",`method=RequestMethod.GET`)   --请求地址是/hello，而且必须是get请求
+
+@RequestMapping(value="/hello",`method=RequestMethod.POST`)  --请求地址是/hello，而且必须是post请求
+
+## 通配符支持
+如：
+@RequestMapping("/aa/*/cc")   --请求地址可以是/aa/xxx/cc
+
+## @PathVariable
+
+@RequestMapping和@PathVariable结合用于获取参数
+
+```java
+@RequestMapping("testvariable/{id}")
+public String testPathVariable(@PathVariable("id")int id) {
+    System.out.println(id);
+    return "success";
+}
+```

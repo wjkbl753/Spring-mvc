@@ -1,6 +1,6 @@
-# 简介 👉
+# Spring 教程
+Spring 框架是一个开源的 Java 平台，它为容易而快速的开发出耐用的 Java 应用程序提供了全面的基础设施。
 
-## 本文档定位?
+Spring 框架最初是由 Rod Johnson 编写的，并且 2003 年 6 月首次在 Apache 2.0 许可下发布。
 
-> 本文档旨在帮助初学者快速上手MyBatis框架,去掉官方文档中不常用的特性讲解，一切以实际应用为出发点，，如果想对MyBatis框架有更加深入的了解，请移步至[官方文档](http://www.mybatis.org/mybatis-3/zh/index.html)： 
 
