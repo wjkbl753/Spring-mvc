@@ -17,17 +17,3 @@
     * [请求资源](qingqiuziyuan)
     * [jsr303](jsr303)
     * [返回json](json)
-
-* 🐹 映射文件配置
-
-    * [概述](gaishu)
-    * [CRUD](CRUD)
-    * [参数传递](canshuchuandi)
-
-* 🙈 进阶用法
-
-     * [复杂映射](fuzayingshe)
-     * [动态SQL](dongtaiSQL)
-     * [缓存](huancun)
-    
-

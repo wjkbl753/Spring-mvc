@@ -2,11 +2,12 @@
 
 需要jar包：
 
-core beans context expression aop web web-mvc
+`core` `beans` `context` `expression` `aop` `web` `web-mvc`
 
-commons-logging junit
+`commons-logging` `junit`
 
-`pom.xml`
+>`pom.xml`
+
 ```xml
 <dependency>
     <groupId>junit</groupId>
@@ -65,7 +66,7 @@ commons-logging junit
 </dependency>
 ```
 
-首先要在web.xml编写DispatcherServlet
+首先要在web.xml编写`DispatcherServlet`
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -136,4 +137,4 @@ public class HelloWorld {
 
 在/WEB-INF/views下新建success.jsp
 
-访问http://localhost:8080/Springmvc/hello
+然后访问http://localhost:8080/Springmvc/hello
