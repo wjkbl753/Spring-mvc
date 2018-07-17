@@ -1,5 +1,11 @@
 @RequestParam绑定请求参数
 
+## 拥有属性：
+   - `value`
+   - `required`
+   - `defaultValue`
+
+
 ```java
 @RequestMapping("/requestTest")
 public String requestTest(@RequestParam("name")String name,@RequestParam("age")int age) {

@@ -4,7 +4,7 @@
 
 `core` `beans` `context` `expression` `aop` `web` `web-mvc`
 
-`commons-logging` `junit`
+`commons-logging` 
 
 >`pom.xml`
 

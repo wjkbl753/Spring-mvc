@@ -25,9 +25,9 @@ public class HelloWorld {
 
 ## 拥有属性：
    - `value`
-   - `metho`
-   - `param`
-   - `heads`
+   - `method`
+   - `params`
+   - `headers`
 
 ## 方法限制(method)
   如：
@@ -35,6 +35,9 @@ public class HelloWorld {
 @RequestMapping(value="/hello",`method=RequestMethod.GET`)   --请求地址是/hello，而且必须是get请求
 
 @RequestMapping(value="/hello",`method=RequestMethod.POST`)  --请求地址是/hello，而且必须是post请求
+
+## 参数限制|请求头限制(了解)：
+@RequestMapping(value = "/hello",params = {"name=1","age"},headers ="Connection=keep-alive" )
 
 ## 通配符支持
 如：
@@ -55,7 +58,8 @@ public String testPathVariable(@PathVariable("id")int id) {
 ## 直接访问：
 
 标准工程项目jsp页面都要放入WEB-INF下，是不能直接访问的，我们可以配一个简单的路径来直接访问
-<mvc:view-controller path="/aaa" view-name="success"/>
+
+`<mvc:view-controller path="/aaa" view-name="success"/>`
 
 但是写上之后，我们发现上面的 @RequestMapping注解全部失效：所以还得再加一个
 
