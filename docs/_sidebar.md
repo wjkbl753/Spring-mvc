@@ -12,7 +12,6 @@
     * [RequestParam](RequestParam)
     * [servlet原生api作为参数](servlet)
 * 其他
-    * [处理模型数据](chulimoxing)
     * [转发和重定向](zhuanfachongdingxiang)
     * [请求资源](qingqiuziyuan)
     * [jsr303](jsr303)

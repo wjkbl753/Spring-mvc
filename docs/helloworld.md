@@ -130,6 +130,7 @@ public class HelloWorld {
 	@RequestMapping("/hello")
 	public String hello(){
 		System.out.println("hello");
+		//转发页面：
 		return "success";
 	}
 }
