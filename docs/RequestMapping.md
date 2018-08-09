@@ -45,7 +45,7 @@ public class HelloWorld {
 
 ## @PathVariable
 
-@RequestMapping和@PathVariable结合用于获取参数
+@RequestMapping和@PathVariable结合用于获取pathinfo
 
 ```java
 @RequestMapping("testvariable/{id}")
