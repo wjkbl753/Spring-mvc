@@ -10,7 +10,7 @@ MVC的fandler方法可以接受ServletAPI类型作为参数
 参数上直接写，就可以直接使用
 
 
-## @SessionAttribute(了解)
+## @SessionAttribute
 
 @SessionAttribute只能放在类上
 

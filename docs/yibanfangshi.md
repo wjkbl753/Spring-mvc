@@ -32,3 +32,17 @@ public String testPojo(User user){
     return "success";
 }
 ```
+
+时间格式化：如果表单有时间格式，那么javabean如何赋值？
+
+```java
+public class User {
+    private Integer id;
+    private String name;
+    private String gender;
+    private ClassRoom classRoom;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date birthday;
+}
+```

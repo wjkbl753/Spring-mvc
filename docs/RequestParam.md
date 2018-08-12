@@ -8,14 +8,14 @@
 
 ```java
 @RequestMapping("/requestTest")
-public String requestTest(@RequestParam("name")String name,@RequestParam("age")int age) {
+public String requestTest(@RequestParam("name")String name,@RequestParam("age")Integer age) {
     System.out.println(name);
     System.out.println(age);
     return "success";
 }
 ```
 
-这样写，参数值必须，不然的话就报404，如果参数值不是必须：此写法不支持基本变量
+这样写，参数值必须，不然的话就报错，如果参数值不是必须：此写法不支持基本变量
 ```java
 @RequestMapping("/requestTest")
 public String requestTest(@RequestParam(value="name",required=false)String name,@RequestParam(value="age",required=false)Integer age) {

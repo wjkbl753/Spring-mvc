@@ -11,10 +11,10 @@
 
     * [一般方式](yibanfangshi)
     * [RequestParam](RequestParam)
-    * [servlet原生api作为参数](servlet)
 * 其他
 
     * [转发和重定向](zhuanfachongdingxiang)
+    * [servlet原生api作为参数](servlet)
     * [请求资源](qingqiuziyuan)
     * [jsr303](jsr303)
     * [返回json](json)
