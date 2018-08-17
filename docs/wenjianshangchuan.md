@@ -54,9 +54,9 @@ public String testFileUpload(String desc, MultipartFile file, HttpServletRequest
 1. 导入 hfileuploadify的css及js
 
 2. 自己不要写file控件了,在想出现上传控件的地方按顺序添加3个div
- <input type="hidden" name="xx"/>			(回填表单,用于提交表单的图片数据库存储)
- <div  class="imageUpload"></div>				(上传控件)
- <div  class="preview"></div>					(预览图)
+ `<input type="hidden" name="xx"/>`			(回填表单,用于提交表单的图片数据库存储)
+ `<div  class="imageUpload"></div>`				(上传控件)
+ `<div  class="preview"></div>`					(预览图)
 
 3. js代码:
 $('.imageUpload').each(function(){
