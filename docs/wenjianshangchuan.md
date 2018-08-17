@@ -62,6 +62,7 @@ public String testFileUpload(String desc, MultipartFile file, HttpServletRequest
 
 
 3. js代码:
+```html
 $('.imageUpload').each(function(){
     var aa = function(obj){
         obj.Huploadify({
@@ -91,7 +92,7 @@ $('.imageUpload').each(function(){
     }
     aa($(this));
 });
-
+```
 4. 后端：
 ```java
 @PostMapping("/testFileUpload")
