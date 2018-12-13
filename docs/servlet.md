@@ -4,8 +4,8 @@ MVC的fandler方法可以接受ServletAPI类型作为参数
 - `HttpSession`
 - `InputStream`
 - `OutputStream`
-- `Reader`
-- `Outer`
+- `BufferedReader`
+- `PrintWriter`
 
 参数上直接写，就可以直接使用
 
