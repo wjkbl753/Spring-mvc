@@ -6,12 +6,12 @@
 * 🦄 核心 
 
     * [RequestMapping注解](RequestMapping)
-* 获取参数
+* 🐹 获取参数
 
     * [一般方式](yibanfangshi)
     * [RequestParam](RequestParam)
     * [乱码处理](luanmachuli)
-* 其他
+* 🙈 其他
 
     * [转发和重定向](zhuanfachongdingxiang)
     * [servlet原生api作为参数](servlet)
@@ -20,7 +20,7 @@
     * [jsr303](jsr303)
     * [rest风格](rest)
     <!-- * [文件上传](wenjianshangchuan) -->
-* SSM整合
+* 😋 SSM整合
 
     * [启动流程](qidongliucheng)
     * [开始配置](kaishipeizhi)
