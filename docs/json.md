@@ -22,9 +22,9 @@
 ```
 
 ## 新注解
-@RestController
+`@RestController`
 
-##返回一般对象R
+* 返回一般对象R
 ```java
 public class R extends HashMap<String,Object> {
     public static R ok(){

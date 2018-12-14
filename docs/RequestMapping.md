@@ -55,13 +55,13 @@ public String testPathVariable(@PathVariable("id")int id) {
 }
 ```
 ## 新注解
-@RequestMapping
+`@RequestMapping`
 
-@PostMapping
+`@PostMapping`
 
-@PutMapping
+`@PutMapping`
 
-@DeleteMapping
+`@DeleteMapping`
 
 ## 直接访问：
 
