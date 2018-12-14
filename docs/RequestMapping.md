@@ -54,6 +54,14 @@ public String testPathVariable(@PathVariable("id")int id) {
     return "success";
 }
 ```
+## 新注解
+@RequestMapping
+
+@PostMapping
+
+@PutMapping
+
+@DeleteMapping
 
 ## 直接访问：
 

@@ -2,7 +2,7 @@
 
 ?>容器:管理对象的组件，如web容器管理servlet，filter，listener，也叫servlet容器
 
-在SSM项目的框架整合，说白了首先3个容器得整合，`web容器`，`spring容器`，`springmvc容器`，再由spring容器去做其他整合扩展
+在SSM项目的框架整合，说白了就是3个容器得整合，`web容器`，`spring容器`，`springmvc容器`，再由spring容器去做其他整合扩展
 
 spring容器我们之前需要靠new ClassPathXmlApplicationContext("applicationContext.xml")来启动
 
