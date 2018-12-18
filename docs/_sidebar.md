@@ -19,7 +19,7 @@
     * [返回json](json)
     * [jsr303](jsr303)
     * [rest风格](rest)
-    <!-- * [文件上传](wenjianshangchuan) -->
+    * [文件上传](wenjianshangchuan) 
 * 😋 SSM整合
 
     * [启动流程](qidongliucheng)
