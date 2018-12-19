@@ -116,30 +116,27 @@ public class ActionLogInterceptor implements HandlerInterceptor {
 
         url = request.getRequestURI();
 
-        //如果访问静态资源，不打印：
-        if (!url.contains("resources")) {
-            logger.debug("--------------------------action请求----------------------------:" + dateFormat.format(date));
-            String str = "";
-            if (handler != null) {
-                str = handler.toString().trim();
-                //去掉修饰符和参数
-                int index = str.indexOf(" ");
-                if (index != -1) str = str.substring(index, str.length() - 1).trim();
-                index = str.indexOf(" ");
-                if (index != -1) str = str.substring(index + 1, str.length() - 1).trim();
-                index = str.indexOf("(");
-                if (index != -1) str = str.substring(0, index).trim();
-            }
-            logger.debug("url: " + url);
-            logger.debug("method: " + request.getMethod());
-            logger.debug("调用方法：" + str);
-            logger.debug("参数：");
-            Map parameterMap = request.getParameterMap();
-            for (Object key : parameterMap.keySet()) {
-                String name = (String) key;
-                String value = request.getParameter(name);
-                logger.debug(name + " : " + value);
-            }
+        logger.debug("--------------------------action请求----------------------------:" + dateFormat.format(date));
+        String str = "";
+        if (handler != null) {
+            str = handler.toString().trim();
+            //去掉修饰符和参数
+            int index = str.indexOf(" ");
+            if (index != -1) str = str.substring(index, str.length() - 1).trim();
+            index = str.indexOf(" ");
+            if (index != -1) str = str.substring(index + 1, str.length() - 1).trim();
+            index = str.indexOf("(");
+            if (index != -1) str = str.substring(0, index).trim();
+        }
+        logger.debug("url: " + url);
+        logger.debug("method: " + request.getMethod());
+        logger.debug("调用方法：" + str);
+        logger.debug("参数：");
+        Map parameterMap = request.getParameterMap();
+        for (Object key : parameterMap.keySet()) {
+            String name = (String) key;
+            String value = request.getParameter(name);
+            logger.debug(name + " : " + value);
         }
         return true;
     }
@@ -152,13 +149,11 @@ public class ActionLogInterceptor implements HandlerInterceptor {
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception e) throws Exception {
-        if (!url.contains("resources")) {
-            if (viewName != null) {
-                logger.debug("viewName: " + viewName);
-            }
-            logger.debug("耗时：" + (System.currentTimeMillis() - startTime) + "毫秒");
-            logger.debug("------------------------------------------------------: " + dateFormat.format(new Date()));
+        if (viewName != null) {
+            logger.debug("viewName: " + viewName);
         }
+        logger.debug("耗时：" + (System.currentTimeMillis() - startTime) + "毫秒");
+        logger.debug("------------------------------------------------------: " + dateFormat.format(new Date())); 
     }
 }
  ```
