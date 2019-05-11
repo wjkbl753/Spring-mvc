@@ -213,8 +213,10 @@
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
+    <!-- 开启事务注解-->
+    <tx:annotation-driven transaction-manager="transactionManager"  />
     <!-- 事务属性-->
-    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+    <!-- <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <tx:attributes>
             <tx:method name="*"/>
         </tx:attributes>
@@ -223,7 +225,7 @@
     <aop:config>
         <aop:pointcut id="txPoint" expression="execution(* com.weixin.service..*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint"/>
-    </aop:config>
+    </aop:config> -->
 </beans>
 ```
 `mybatis-config.xml`
