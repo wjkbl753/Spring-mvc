@@ -221,7 +221,7 @@
             <tx:method name="*"/>
         </tx:attributes>
     </tx:advice>
-    <!-- 切入-->
+         切入 
     <aop:config>
         <aop:pointcut id="txPoint" expression="execution(* com.weixin.service..*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint"/>
