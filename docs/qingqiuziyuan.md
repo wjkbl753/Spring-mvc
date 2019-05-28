@@ -1,6 +1,6 @@
 springmvc默认只能访问jsp，其他任何资源css,js,html都不能直接访问
 
-我们需要在springmvc.xml中加配置 
+<!-- 我们需要在springmvc.xml中加配置 
 
     <mvc:default-servlet-handler/>
 
@@ -10,7 +10,8 @@ springmvc默认只能访问jsp，其他任何资源css,js,html都不能直接访
 需要加配置 <mvc:annotation-driven/>
 
 
-或者：
+或者： -->
 <!--静态资源-->
+在web目录下新建resources文件夹，把静态资源都放到此文件夹
 
     <mvc:resources mapping="/resources/**" location="/resources/"/>

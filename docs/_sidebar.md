@@ -14,7 +14,7 @@
 * 🙈 其他
 
     * [转发和重定向](zhuanfachongdingxiang)
-    * [servlet原生api作为参数](servlet)
+    * [获取request,session,servletcontext](huoqurequest)
     * [请求资源](qingqiuziyuan)
     * [返回json](json)
     * [jsr303](jsr303)
