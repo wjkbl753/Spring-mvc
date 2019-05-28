@@ -21,6 +21,12 @@ springmvc容器(用于管理控制器，拦截器等对象)的启动由Dispatche
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
+    <!-- 监听器需要读取的spring配置 -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:spring.xml</param-value>
+    </context-param>
+
     <!-- Spring MVC ，启动springmvc容器-->
     <servlet>
         <servlet-name>SpringMVC</servlet-name>

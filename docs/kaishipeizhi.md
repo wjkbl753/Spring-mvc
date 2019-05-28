@@ -197,12 +197,16 @@
     </bean>
 
     <!--sqlsessionfactory-->
-    <bean class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="configLocation" value="classpath:mybatis-config.xml"/>
-        <property name="dataSource" ref="dataSource"/>
-        <property name="typeAliasesPackage" value="com.weixin.bean"/>
-        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
-    </bean>
+<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+    <property name="dataSource" ref="dataSource"></property>
+    <property name="typeAliasesPackage" value="com.weixin.bean"></property>
+    <property name="mapperLocations" value="classpath:mapper/*Mapper.xml"></property>
+    <property name="configuration">
+        <bean class="org.apache.ibatis.session.Configuration">
+            <property name="mapUnderscoreToCamelCase" value="true"/>
+        </bean>
+    </property>
+</bean>
 
     <!-- 接口扫描-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">

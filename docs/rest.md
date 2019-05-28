@@ -1,4 +1,4 @@
-rest风格url
+rest风格url适合前后端分离项目，要求全部返回json
 
 rest风格url 有`get(查询)`,`post(新增)`，`put(修改)`，`delete(删除)`
 
@@ -36,7 +36,7 @@ delete请求
 ```
 ```java
 @RequestMapping(value="/student/{id}",method=RequestMethod.DELETE)
-	@ResponseBody    //如果delete或put请求报405需要加此注解
+	@ResponseBody   
 	public String studentDELETE(@PathVariable("id") int id) {
 		System.out.println("delete"+id);
 		return "success";
@@ -52,7 +52,7 @@ put请求
 ```
 ```java
 @RequestMapping(value="/student/{id}",method=RequestMethod.PUT)
-	@ResponseBody //如果delete或put请求报405需要加此注解
+	@ResponseBody 
 	public String studentPUT(@PathVariable("id") int id) {
 		System.out.println("put"+id);
 		return "success";
