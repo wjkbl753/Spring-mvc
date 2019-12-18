@@ -94,7 +94,7 @@ public class LoginInteceptor implements HandlerInterceptor {
         <mvc:mapping path="/**"/>
         <mvc:exclude-mapping path="/login"/>
         <mvc:exclude-mapping path="/resources/**"/>
-        <bean class="com.weixin.inteceptor.LoginInteceptor"/>
+        <bean class="com.woyuno.inteceptor.LoginInteceptor"/>
     </mvc:interceptor>
 </mvc:interceptors>
  ```

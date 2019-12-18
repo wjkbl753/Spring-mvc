@@ -30,7 +30,7 @@
 <struts>
 	<!-- 创建一个default包，继承自Struts2的struts-default包 -->
 	<package name="default" namespace="/" extends="struts-default">
-		<action name="hello" class="com.weixin.action.HelloAction">
+		<action name="hello" class="com.woyuno.action.HelloAction">
 			<!-- 结果为"helloWorld"时，跳转至helloWorld.jsp页面 -->
 			<result name="success">/hello.jsp</result>
 		</action>
@@ -74,7 +74,7 @@
 </tx:advice>
 <!-- 切入-->
 <aop:config>
-    <aop:pointcut id="txPoint" expression="execution(* com.weixin.service..*.*(..))"/>
+    <aop:pointcut id="txPoint" expression="execution(* com.woyuno.service..*.*(..))"/>
     <aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint"/>
 </aop:config>
 ```

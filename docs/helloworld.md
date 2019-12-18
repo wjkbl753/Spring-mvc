@@ -107,7 +107,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
 <!-- 配置扫描包 -->
-<context:component-scan base-package="com.weixin.controller"></context:component-scan>
+<context:component-scan base-package="com.woyuno.controller"></context:component-scan>
 <!-- 配置视图解析器 -->
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	<property name="prefix" value="/WEB-INF/views/"></property>

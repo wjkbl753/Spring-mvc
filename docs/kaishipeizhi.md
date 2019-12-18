@@ -160,7 +160,7 @@
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
     <!-- 扫描控制器，springmvc容器维护-->
-    <context:component-scan base-package="com.weixin.controller"/>
+    <context:component-scan base-package="com.woyuno.controller"/>
     <!-- 支持requestmapping注解，jsr303-->
     <mvc:annotation-driven/>
     <!-- 访问静态资源 -->
@@ -183,7 +183,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <!-- spring 容器扫描除 controller的bean进行维护-->
-    <context:component-scan base-package="com.weixin">
+    <context:component-scan base-package="com.woyuno">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
@@ -199,7 +199,7 @@
     <!--sqlsessionfactory-->
 <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
     <property name="dataSource" ref="dataSource"></property>
-    <property name="typeAliasesPackage" value="com.weixin.bean"></property>
+    <property name="typeAliasesPackage" value="com.woyuno.bean"></property>
     <property name="mapperLocations" value="classpath:mapper/*Mapper.xml"></property>
     <property name="configuration">
         <bean class="org.apache.ibatis.session.Configuration">
@@ -210,7 +210,7 @@
 
     <!-- 接口扫描-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.weixin.mapper"/>
+        <property name="basePackage" value="com.woyuno.mapper"/>
     </bean>
 
     <!--事务管理器-->
@@ -227,7 +227,7 @@
     </tx:advice>
          切入 
     <aop:config>
-        <aop:pointcut id="txPoint" expression="execution(* com.weixin.service..*.*(..))"/>
+        <aop:pointcut id="txPoint" expression="execution(* com.woyuno.service..*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint"/>
     </aop:config> -->
 </beans>
